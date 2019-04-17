@@ -16,7 +16,7 @@ import time
 
 app = dash.Dash(__name__)
 server = app.server
-app.config['suppress_callback_exceptions']=True
+#app.config['suppress_callback_exceptions']=True
 
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/brPBPO.css']
 data_source = pds.read_csv('alll_mixA_agg.csv')
