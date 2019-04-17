@@ -14,7 +14,7 @@ import plotly_express as px
 import numpy as np
 import time
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__,static_file='assets')
 server = app.server
 #app.config['suppress_callback_exceptions']=True
 
