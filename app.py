@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Apr 15
-
 @author: kchen
 """
 
@@ -334,28 +333,29 @@ tabs_styles = {
 tab_style = {
             'borderBottom': '1px solid #d6d6d6',
             'padding': '6px',
-            'fontWeight': 'bold'
+            'color':'#747480'
             }
 
 tab_selected_style = {
                     'borderTop': '1px solid #d6d6d6',
                     'borderBottom': '1px solid #d6d6d6',
                     'backgroundColor': '#FFE600',
-                    'color': 'grey',
-                    'padding': '6px'
+                    'color': '#2E2E38',
+                    'padding': '6px',
+                    'fontWeight':'bold'
                     }
 
 app.layout = html.Div([
     html.Div(
-            className = 'ten columns',
+            className = 'twelve columns',
             children=[
                     html.Div('Peer Bank Allowance Ratio Benchmarking Analysis',
-                             style={'font-size':40,'color':'#FFE600','margin-left':'6%','font-weight':'bold'},
-                             className = 'nine columns'),
+                             style={'font-size':40,'color':'#FFE600','margin-left':'5%','font-weight':'bold'},
+                             className = 'ten columns'),
                     html.Div(html.Img(src=app.get_asset_url('EY_Logo_Beam_RGB_White_Yellow.png'),
                                       style={'height':60}),
                              style={'height':70,'line-height':70,'text-align':'right'},
-                             className = 'two columns')                                    
+                             className = 'one columns')                                    
                     ], style={'display':'inline-block','height':70,'line-height':70,'margin-bottom':50,'margin-top':'1%'}
             ),
     html.Div(
